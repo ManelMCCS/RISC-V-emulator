@@ -1,10 +1,16 @@
 # RISC-V Emulator
 
+# Introduction
+
 Creating a RISC-V emulator in Rust could be extremely useful, as it would enable developers to easily test and debug their programs on a simulated processor. This would make the development process much easier, as developers would not have to wait for physical hardware to be available in order to test their code. Additionally, a RISC-V emulator written in Rust would be much faster and more reliable than other existing emulators, as Rust is a language designed with speed and reliability in mind. This would make the development process even more efficient and would allow developers to quickly and accurately test their programs.
 
 Futhermore, I am interested in learning the RISC-V architecture and the Rust programming language. RISC-V is an open-source architecture for designing and implementing computer processors. It is a modern architecture that is becoming increasingly popular, and I believe that understanding it will be beneficial for my future career. Similarly, Rust is a relatively new programming language that I am eager to learn. Rust is a systems programming language that offers safety, speed, and memory efficiency, and I believe that it is the perfect language for the tasks I am interested in pursuing.
 
 Learning both RISC-V and Rust will require a significant amount of dedication and hard work, but I am confident that it will be worth it in the end. I am passionate about learning new technologies and I am confident that these two will be beneficial for my future career. I am excited to start learning both of these technologies and I am committed to gaining a thorough understanding of them.
+
+# State of the art
+
+The current state of RISC-V emulators is still in its early stages, with some basic emulators available but most of them lacking in features. The most popular RISC-V emulators are often built on top of existing architectures, such as x86 and MIPS, and while these emulators can provide a good starting point, they are often not suitable for real-world applications. There are also some more advanced RISC-V emulators available, such as Renode, which is a full-featured emulator for RISC-V that supports a wide range of peripherals and devices. Finally, there are also some commercial RISC-V emulators available, such as the SiFive Freedom U500, which is a full-featured RISC-V emulator designed for embedded applications.
 
 ## Methodology
 
