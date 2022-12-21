@@ -38,13 +38,26 @@ The process of creating a RISC-V emulator involves several steps, which can be b
 
 ## RISC-V emulator components:
 
-**Register file**: The register file is a set of registers that hold data values and intermediate results. RISC-V has 32 general-purpose registers (x0-x31), as well as several special-purpose registers such as the program counter (pc) and the stack pointer (sp).
+**Register file**: In a RISC-V processor, the register file is a memory structure that stores a set of registers that are used to hold data and address values during the execution of instructions. The register file is typically implemented using high-speed memory, such as SRAM or register files, and is accessed very frequently during the execution of instructions.
+
+The number and size of the registers in the register file will depend on the specific architecture of the RISC-V processor. In the RISC-V ISA, there are 32 integer registers, which are referred to as x0 through x31, and 32 floating-point registers, which are referred to as f0 through f31. In addition to these registers, there are also several special-purpose registers, such as the program counter (pc) and the stack pointer (sp).
+
 
 **Memory**: The emulator will need to include some form of memory to store data and instructions. This can be represented using an array or a vector in Rust.
 
 **Instruction decoder**: The instruction decoder is responsible for decoding and interpreting the instructions that are fetched from memory. It translates the instructions into the appropriate actions that need to be taken by the emulator.
 
-**Execution units**: The execution units are responsible for executing the instructions that are decoded by the instruction decoder. This may involve manipulating the register file, accessing memory, or performing arithmetic or logical operations.
+**Arithmetic and logical unit (ALU)**: An execution unit that performs arithmetic and logical operations, such as addition, subtraction, and bitwise operations.
+
+**Floating-point unit (FPU)**: An execution unit that
+
+**Load/store unit (LSU)**: An execution unit that performs memory access operations, such as loading data from memory or storing data to memory.
+
+**Branch unit**: An execution unit that performs branch instructions, such as jumps and branches based on conditional statements.
+
+**Multiply-accumulate unit (MAC)**: An execution unit that performs multiplication and accumulation operations, which are commonly used in signal processing and other applications.
+
+**Vector unit**: An execution unit that performs vector operations, such as SIMD (Single Instruction, Multiple Data) operations.
 
 **Interrupt handling**: Some RISC-V implementations support interrupts, which allow external devices to interrupt the normal execution of the processor. The emulator will need to include support for handling interrupts, including setting and clearing interrupt flags and handling the interrupt service routine (ISR).
 
@@ -67,20 +80,11 @@ The process of creating a RISC-V emulator involves several steps, which can be b
 
 [Insert some examples of how to use your emulator, including code samples if applicable]
 
-## Used resources
+## References
 
-Used:
-* https://inst.eecs.berkeley.edu/~cs61c/resources/su18_lec/Lecture11.pdf
+* "RISC-V User-Level ISA Specification, Volume I: User-Level ISA" (https://riscv.org/specifications/user-level-isa/) - This document provides a detailed description of the user-level ISA of the RISC-V processor, including the registers and their usage.
 
-May consider:
-
-* The RISC-V Instruction Set Manual (ISAv2.2): This manual provides a detailed description of the RISC-V instruction set, including the encoding and semantics of each instruction. It is available at https://riscv.org/specifications/.
-
-* The RISC-V External Debug Support specification: This specification defines the architecture and implementation requirements for external debug support in RISC-V processors. It is available at https://riscv.org/specifications/.
-
-* The RISC-V Privileged Architecture specification: This specification defines the architecture and implementation requirements for privileged mode in RISC-V processors. It is available at https://riscv.org/specifications/.
-
-* The RISC-V Software Stack: This is a collection of software tools and libraries that are designed to work with RISC-V processors. It includes tools for assembling and disassembling RISC-V instructions, as well as libraries for implementing system-level functionality such as virtual memory and system calls. The RISC-V Software Stack is available at https://github.com/riscv/riscv-tools.
+* "RISC-V Privileged ISA Specification, Volume II: Privileged Architecture" (https://riscv.org/specifications/privileged-isa/) - This document provides a detailed description of the privileged ISA of the RISC-V processor, including the special-purpose registers and their usage.
 
 ## Contributions
 
