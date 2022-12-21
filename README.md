@@ -52,7 +52,15 @@ The number and size of the registers in the register file will depend on the spe
 **Instruction fetch unit**: This component is responsible for fetching instructions from memory and sending them to the instruction decode unit.
 
 
-**Arithmetic and logical unit (ALU)**: An execution unit that performs arithmetic and logical operations, such as addition, subtraction, and bitwise operations.
+**Arithmetic and logical unit (ALU)**: The arithmetic and logical unit (ALU) is a hardware component of a RISC-V processor that performs arithmetic and logical operations on data. The ALU is typically responsible for executing a wide range of operations, including basic arithmetic operations such as addition and subtraction, as well as more complex operations such as shifting and rotating data.
+
+In the RISC-V ISA, the ALU is responsible for executing a number of different instructions, including:
+
+- Arithmetic instructions: add, sub, mul, div, rem
+- Logical instructions: and, or, xor, andi, ori, xori
+- Shift instructions: sll, srl, sra
+
+The specific operations that the ALU is capable of performing will depend on the specific architecture of the RISC-V processor.
 
 **Floating-point unit (FPU)**: An execution unit that
 
