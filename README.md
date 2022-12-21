@@ -45,7 +45,12 @@ The number and size of the registers in the register file will depend on the spe
 
 **Memory**: The emulator will need to include some form of memory to store data and instructions. This can be represented using an array or a vector in Rust.
 
-**Instruction decoder**: The instruction decoder is responsible for decoding and interpreting the instructions that are fetched from memory. It translates the instructions into the appropriate actions that need to be taken by the emulator.
+**Memory interface**: This component is responsible for interacting with external memory and handling memory access requests from the processor.
+
+**Instruction decoder unit**: The instruction decoder is responsible for decoding and interpreting the instructions that are fetched from memory. It translates the instructions into the appropriate actions that need to be taken by the emulator.
+
+**Instruction fetch unit**: This component is responsible for fetching instructions from memory and sending them to the instruction decode unit.
+
 
 **Arithmetic and logical unit (ALU)**: An execution unit that performs arithmetic and logical operations, such as addition, subtraction, and bitwise operations.
 
@@ -59,9 +64,11 @@ The number and size of the registers in the register file will depend on the spe
 
 **Vector unit**: An execution unit that performs vector operations, such as SIMD (Single Instruction, Multiple Data) operations.
 
-**Interrupt handling**: Some RISC-V implementations support interrupts, which allow external devices to interrupt the normal execution of the processor. The emulator will need to include support for handling interrupts, including setting and clearing interrupt flags and handling the interrupt service routine (ISR).
+**Interrupt handling**: Some RISC-V implementations support interrupts, which allow external devices to interrupt the normal execution of the processor. The emulator will need to include support for handling interrupts, including setting and clearing interrupt flags and handling the interrupt service routine (ISR). This component is responsible for handling interrupts and exceptions, and directing them to the appropriate execution units or other components of the processor.
 
 **Debugging support**: It is often useful to include debugging support in an emulator, such as the ability to single-step through the execution of instructions, set breakpoints, or inspect the register file and memory.
+
+**Control unit**: This component is responsible for controlling the operation of the processor and coordinating the activities of the other components.
 
 
 ## Requirements
@@ -81,6 +88,10 @@ The number and size of the registers in the register file will depend on the spe
 [Insert some examples of how to use your emulator, including code samples if applicable]
 
 ## References
+
+* "RISC-V User-Level ISA Specification, Volume I: User-Level ISA" (https://riscv.org/specifications/user-level-isa/) - This document provides a detailed description of the user-level ISA of the RISC-V processor, including the registers and their usage.
+
+* "RISC-V Privileged ISA Specification, Volume II: Privileged Architecture" (https://riscv.org/specifications/privileged-isa/) - This document provides a detailed description of the privileged ISA of the RISC-V processor, including the special-purpose registers and their usage.
 
 * "RISC-V User-Level ISA Specification, Volume I: User-Level ISA" (https://riscv.org/specifications/user-level-isa/) - This document provides a detailed description of the user-level ISA of the RISC-V processor, including the registers and their usage.
 
