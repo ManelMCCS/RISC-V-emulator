@@ -8,15 +8,15 @@ Project to learn RISC-V architecture and learn Rust programming language
 The first step in creating a RISC-V emulator is to familiarize with the architecture and instruction set. The detailed information about the architecture and instruction set in the RISC-V specification documents, which are available at https://riscv.org/.
 These documents provide a detailed specification of the architecture and instruction set, as well as information about the various RISC-V implementations and extensions.
 
-In addition to reading the specification documents, I may also want to consider the following resources:
+* In addition to reading the specification documents, I may also want to consider the following resources:
 
-    The RISC-V Instruction Set Manual (ISAv2.2): This manual provides a detailed description of the RISC-V instruction set, including the encoding and semantics of each instruction. It is available at https://riscv.org/specifications/.
+* The RISC-V Instruction Set Manual (ISAv2.2): This manual provides a detailed description of the RISC-V instruction set, including the encoding and semantics of each instruction. It is available at https://riscv.org/specifications/.
 
-    The RISC-V External Debug Support specification: This specification defines the architecture and implementation requirements for external debug support in RISC-V processors. It is available at https://riscv.org/specifications/.
+* The RISC-V External Debug Support specification: This specification defines the architecture and implementation requirements for external debug support in RISC-V processors. It is available at https://riscv.org/specifications/.
 
-    The RISC-V Privileged Architecture specification: This specification defines the architecture and implementation requirements for privileged mode in RISC-V processors. It is available at https://riscv.org/specifications/.
+* The RISC-V Privileged Architecture specification: This specification defines the architecture and implementation requirements for privileged mode in RISC-V processors. It is available at https://riscv.org/specifications/.
 
-    The RISC-V Software Stack: This is a collection of software tools and libraries that are designed to work with RISC-V processors. It includes tools for assembling and disassembling RISC-V instructions, as well as libraries for implementing system-level functionality such as virtual memory and system calls. The RISC-V Software Stack is available at https://github.com/riscv/riscv-tools.
+* The RISC-V Software Stack: This is a collection of software tools and libraries that are designed to work with RISC-V processors. It includes tools for assembling and disassembling RISC-V instructions, as well as libraries for implementing system-level functionality such as virtual memory and system calls. The RISC-V Software Stack is available at https://github.com/riscv/riscv-tools.
 
 ## Step 2: Designing and implementing the emulator
 
