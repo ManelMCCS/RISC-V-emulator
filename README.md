@@ -38,19 +38,17 @@ The process of creating a RISC-V emulator involves several steps, which can be b
 
 ## RISC-V emulator components:
 
-### Not implemented:
+**Register file**: The register file is a set of registers that hold data values and intermediate results. RISC-V has 32 general-purpose registers (x0-x31), as well as several special-purpose registers such as the program counter (pc) and the stack pointer (sp).
 
-Register file: The register file is a set of registers that hold data values and intermediate results. RISC-V has 32 general-purpose registers (x0-x31), as well as several special-purpose registers such as the program counter (pc) and the stack pointer (sp).
+**Memory**: The emulator will need to include some form of memory to store data and instructions. This can be represented using an array or a vector in Rust.
 
-Memory: The emulator will need to include some form of memory to store data and instructions. This can be represented using an array or a vector in Rust.
+**Instruction decoder**: The instruction decoder is responsible for decoding and interpreting the instructions that are fetched from memory. It translates the instructions into the appropriate actions that need to be taken by the emulator.
 
-Instruction decoder: The instruction decoder is responsible for decoding and interpreting the instructions that are fetched from memory. It translates the instructions into the appropriate actions that need to be taken by the emulator.
+**Execution units**: The execution units are responsible for executing the instructions that are decoded by the instruction decoder. This may involve manipulating the register file, accessing memory, or performing arithmetic or logical operations.
 
-Execution units: The execution units are responsible for executing the instructions that are decoded by the instruction decoder. This may involve manipulating the register file, accessing memory, or performing arithmetic or logical operations.
+**Interrupt handling**: Some RISC-V implementations support interrupts, which allow external devices to interrupt the normal execution of the processor. The emulator will need to include support for handling interrupts, including setting and clearing interrupt flags and handling the interrupt service routine (ISR).
 
-Interrupt handling: Some RISC-V implementations support interrupts, which allow external devices to interrupt the normal execution of the processor. The emulator will need to include support for handling interrupts, including setting and clearing interrupt flags and handling the interrupt service routine (ISR).
-
-Debugging support: It is often useful to include debugging support in an emulator, such as the ability to single-step through the execution of instructions, set breakpoints, or inspect the register file and memory.
+**Debugging support**: It is often useful to include debugging support in an emulator, such as the ability to single-step through the execution of instructions, set breakpoints, or inspect the register file and memory.
 
 
 ## Requirements
