@@ -8,6 +8,8 @@ Futhermore, I am interested in learning the RISC-V architecture and the Rust pro
 
 Learning both RISC-V and Rust will require a significant amount of dedication and hard work, but I am confident that it will be worth it in the end. I am passionate about learning new technologies and I am confident that these two will be beneficial for my future career. I am excited to start learning both of these technologies and I am committed to gaining a thorough understanding of them.
 
+In this implementation we are considering the RV32I architecutre. The RV32I architecture is the base integer ISA for RISC-V processors, which includes 32-bit integer registers and a subset of the RISC-V instructions.
+
 # State of the art
 
 The current state of RISC-V emulators is still in its early stages, with some basic emulators available but most of them lacking in features. The most popular RISC-V emulators are often built on top of existing architectures, such as x86 and MIPS, and while these emulators can provide a good starting point, they are often not suitable for real-world applications. There are also some more advanced RISC-V emulators available, such as Renode, which is a full-featured emulator for RISC-V that supports a wide range of peripherals and devices. Finally, there are also some commercial RISC-V emulators available, such as the SiFive Freedom U500, which is a full-featured RISC-V emulator designed for embedded applications.
@@ -52,15 +54,32 @@ The number and size of the registers in the register file will depend on the spe
 **Instruction fetch unit**: This component is responsible for fetching instructions from memory and sending them to the instruction decode unit.
 
 
-**Arithmetic and logical unit (ALU)**: The arithmetic and logical unit (ALU) is a hardware component of a RISC-V processor that performs arithmetic and logical operations on data. The ALU is typically responsible for executing a wide range of operations, including basic arithmetic operations such as addition and subtraction, as well as more complex operations such as shifting and rotating data.
+### Arithmetic and logical unit (ALU)
 
-In the RISC-V ISA, the ALU is responsible for executing a number of different instructions, including:
+The arithmetic and logical unit (ALU) is a hardware component of a RISC-V processor that performs arithmetic and logical operations on data. The ALU is typically responsible for executing a wide range of operations, including basic arithmetic operations such as addition and subtraction, as well as more complex operations such as shifting and rotating data.
+The arithmetic and logical unit (ALU) of an RV32I processor is responsible for executing a number of different instructions, including arithmetic instructions, logical instructions, and shift instructions.
 
-- Arithmetic instructions: add, sub, mul, div, rem
-- Logical instructions: and, or, xor, andi, ori, xori
-- Shift instructions: sll, srl, sra
+#### Arithmetic instructions
 
-The specific operations that the ALU is capable of performing will depend on the specific architecture of the RISC-V processor.
+- `add`: Add two integers
+- `sub`: Subtract one integer from another
+- `mul`: Multiply two integers
+- `div`: Divide one integer by another
+- `rem`: Calculate the remainder of one integer divided by another
+
+#### Logical instructions
+
+- `and`: Perform a bitwise AND operation on two integers
+- `or`: Perform a bitwise OR operation on two integers
+- `xor`: Perform a bitwise XOR operation on two integers
+- `andi`: Perform a bitwise AND operation on an integer and an immediate value
+- `ori`: Perform a bitwise OR operation on an integer and an immediate value
+- `xori`: Perform a bitwise XOR operation on an integer and an immediate value
+
+#### Shift instructions
+- `sll`: Shift the bits of an integer to the left by a specified number of positions. 
+- `srl`: Shift the bits of an integer to the right by a specified number of positions.
+- `sra`: Shift the bits of an integer to the right by a specified number of positions, with sign extension.
 
 **Floating-point unit (FPU)**: An execution unit that
 
