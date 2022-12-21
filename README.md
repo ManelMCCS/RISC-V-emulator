@@ -77,7 +77,30 @@ The number and size of the registers in the register file will depend on the spe
 
 ## Installation
 
-[Insert instructions on how to install and set up your emulator]
+### Rust Compiler Installation Guide
+
+Follow these steps to install a Rust compiler on a computer running a Unix-based operating system (such as Linux or macOS):
+
+1. **Install the Rust toolchain**: The Rust toolchain includes the Rust compiler (rustc), the Rust package manager (cargo), and other tools. To install the Rust toolchain, run the following command:
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
+This will download and run the Rust installation script, which will guide you through the process of installing the Rust toolchain.
+
+2. **Verify the installation**: To verify that the Rust toolchain was installed successfully, run the following command:
+
+rustc --version
+
+
+This should print the version number of the Rust compiler that was installed.
+
+3. **Set up your environment**: After the Rust toolchain has been installed, you may need to update your environment variables to ensure that the Rust tools are available on the command line. To do this, run the following command:
+
+source $HOME/.cargo/env
+
+
+This will update your environment variables to include the directories where the Rust tools are installed.
 
 ## Usage
 
@@ -89,13 +112,9 @@ The number and size of the registers in the register file will depend on the spe
 
 ## References
 
-* "RISC-V User-Level ISA Specification, Volume I: User-Level ISA" (https://riscv.org/specifications/user-level-isa/) - This document provides a detailed description of the user-level ISA of the RISC-V processor, including the registers and their usage.
+* "RISC-V User-Level ISA Specification, Volume I: User-Level ISA" (https://riscv.org/specifications/user-level-isa/) - This document provides a detailed description of the user-level ISA of the RISC-V processor.
 
-* "RISC-V Privileged ISA Specification, Volume II: Privileged Architecture" (https://riscv.org/specifications/privileged-isa/) - This document provides a detailed description of the privileged ISA of the RISC-V processor, including the special-purpose registers and their usage.
-
-* "RISC-V User-Level ISA Specification, Volume I: User-Level ISA" (https://riscv.org/specifications/user-level-isa/) - This document provides a detailed description of the user-level ISA of the RISC-V processor, including the registers and their usage.
-
-* "RISC-V Privileged ISA Specification, Volume II: Privileged Architecture" (https://riscv.org/specifications/privileged-isa/) - This document provides a detailed description of the privileged ISA of the RISC-V processor, including the special-purpose registers and their usage.
+* "RISC-V Privileged ISA Specification, Volume II: Privileged Architecture" (https://riscv.org/specifications/privileged-isa/) - This document provides a detailed description of the privileged ISA of the RISC-V processor.
 
 ## Contributions
 
