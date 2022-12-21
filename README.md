@@ -28,7 +28,13 @@ The process of creating a RISC-V emulator involves several steps, which can be b
 
 ## Features
 
-- [Insert a list of the main features of your emulator here]
+1. **Instruction execution**: The ability to parse and interpret RISC-V instructions, and simulate their execution on a virtual processor.
+2. **Memory management**: The ability to simulate memory access and management, including support for different memory regions and addressing modes.
+3. **Interrupt handling**: The ability to handle interrupts and exceptions, including support for different interrupt types and priority levels.
+4. **Debugging support**: Tools and features to aid in debugging the emulator, such as support for breakpoints, single-stepping, and examining the state of the virtual processor and memory.
+5. **External device emulation**: The ability to simulate external devices such as UARTs, timers, and other peripherals, and to interact with them through memory-mapped I/O.
+6. **User interface**: A user interface to allow users to control and interact with the emulator, such as a command-line interface or a graphical user interface.
+7. **Performance optimization**: Techniques and features to optimize the performance of the emulator, such as support for dynamic translation or just-in-time compilation.
 
 ## RISC-V emulator components:
 
