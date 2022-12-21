@@ -83,21 +83,21 @@ Follow these steps to install a Rust compiler on a computer running a Unix-based
 
 1. **Install the Rust toolchain**: The Rust toolchain includes the Rust compiler (rustc), the Rust package manager (cargo), and other tools. To install the Rust toolchain, run the following command:
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
-This will download and run the Rust installation script, which will guide you through the process of installing the Rust toolchain.
+  This will download and run the Rust installation script, which will guide you through the process of installing the Rust toolchain.
 
 2. **Verify the installation**: To verify that the Rust toolchain was installed successfully, run the following command:
 
-rustc --version
+  rustc --version
 
 
 This should print the version number of the Rust compiler that was installed.
 
 3. **Set up your environment**: After the Rust toolchain has been installed, you may need to update your environment variables to ensure that the Rust tools are available on the command line. To do this, run the following command:
 
-source $HOME/.cargo/env
+  source $HOME/.cargo/env
 
 
 This will update your environment variables to include the directories where the Rust tools are installed.
